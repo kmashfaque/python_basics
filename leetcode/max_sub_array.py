@@ -80,23 +80,3 @@
 
 
 # merge_tools(string, 3)
-import collections
-from collections import Counter
-
-string = "eeaaabbbbcceedd"
-
-hash_map = {}
-
-for s in sorted(string):
-    if s not in hash_map:
-        hash_map[s] = 1
-    else:
-        hash_map[s] += 1
-
-# for w in sorted(hash_map, key=hash_map.get, reverse=True):
-
-# print(w, hash_map[w])
-z = Counter(hash_map).most_common(3)
-
-for x in z:
-    print(*x)

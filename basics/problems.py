@@ -137,6 +137,8 @@
 # print(temp)
 
 
+from collections import Counter
+import collections
 lst = [["chi", 20.0], ["beta", 50.0], ["alpha", 50]]
 
 newlist = []
@@ -144,3 +146,21 @@ for val in lst:
     newlist.append(val[1])
     newlist.sort()
     print(newlist)
+
+string = "eeaaabbbbcceedd"
+
+hash_map = {}
+
+for s in sorted(string):
+    if s not in hash_map:
+        hash_map[s] = 1
+    else:
+        hash_map[s] += 1
+
+# for w in sorted(hash_map, key=hash_map.get, reverse=True):
+
+# print(w, hash_map[w])
+z = Counter(hash_map).most_common(3)
+
+for x in z:
+    print(*x)
