@@ -111,15 +111,36 @@
 
 
 # program for third largest number
-my_List = [[3, 5, 8, 6], [23, 54, 12, 87], [1, 2, 4, 12, 5]]
+# my_List = [[3, 5, 8, 6], [23, 54, 12, 87], [1, 2, 4, 12, 5]]
 
 # sorting every sublist of the above list
 
 
-def sort_List(num): return (sorted(n) for n in num)
+# def sort_List(num): return (sorted(n) for n in num)
 
 
-def third_largest(x, func): return [l[len(l)-2] for l in func(x)]
+# def third_largest(x, func): return [l[len(l)-2] for l in func(x)]
 
 
-print(list(third_largest(my_List, sort_List)))
+# print(list(third_largest(my_List, sort_List)))
+
+
+# user_input = input("Enter your number: ")
+# temp = 0
+# val = user_input
+# new_user_input = user_input
+# for i in range(1, 5):
+
+#     temp += int(user_input)
+#     user_input = new_user_input+val
+#     new_user_input = user_input
+# print(temp)
+
+
+lst = [["chi", 20.0], ["beta", 50.0], ["alpha", 50]]
+
+newlist = []
+for val in lst:
+    newlist.append(val[1])
+    newlist.sort()
+    print(newlist)
