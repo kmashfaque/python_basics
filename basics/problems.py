@@ -185,3 +185,16 @@
 #     print("Palindrome")
 # else:
 #     print("Not Plindrome")
+
+
+def reverse_number(num):
+    reversed_number = ""
+    while num > 0:
+        remainder = num % 10
+        reversed_number += str(remainder)
+        num = num//10
+    return reversed_number
+
+
+res = reverse_number(2345)
+print(res)
