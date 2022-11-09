@@ -158,8 +158,9 @@
 #         hash_map[s] += 1
 
 # for w in sorted(hash_map, key=hash_map.get, reverse=True):
-
 # print(w, hash_map[w])
+
+
 # z = Counter(hash_map).most_common(3)
 
 # for x in z:
@@ -187,14 +188,14 @@
 #     print("Not Plindrome")
 
 
-def reverse_number(num):
-    reversed_number = ""
-    while num > 0:
-        remainder = num % 10
-        reversed_number += str(remainder)
-        num = num//10
-    return reversed_number
+# def reverse_number(num):
+#     reversed_number = ""
+#     while num > 0:
+#         remainder = num % 10
+#         reversed_number += str(remainder)
+#         num = num//10
+#     return reversed_number
 
 
-res = reverse_number(2345)
-print(res)
+# res = reverse_number(2345)
+# print(res)
