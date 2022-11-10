@@ -38,12 +38,48 @@ class BST:
             else:
                 print("Node is not found!!")
 
+    def preorder(self):
+        print(self.key)
+        if self.lchild:
+            self.lchild.preorder()
+        if self.rchild:
+            self.rchild.preorder()
+
+    def inorder(self):
+
+        if self.lchild:
+            self.lchild.inorder()
+
+        print(self.key)
+        if self.rchild:
+            self.rchild.inorder()
+
+    def postorder(self):
+        if self.lchild:
+            self.lchild.postorder()
+
+        if self.rchild:
+            self.rchild.postorder()
+        print(self.key)
+
 
 root = BST(10)
-
+root.insert(5)
+root.insert(6)
+root.insert(7)
+root.insert(3)
+root.insert(2)
+root.insert(1)
 root.insert(20)
 root.insert(30)
 root.insert(40)
 root.insert(50)
 
-root.search(100)
+print("Preorder")
+root.preorder()
+
+print("Inorder")
+root.inorder()
+
+print("Postorder")
+root.postorder()
