@@ -19,3 +19,25 @@ import numpy as np
 
 # arr = np.array([[1, 2, 3, 5], [5, 6, 7, 8]])
 # print(arr.ndim)
+
+kanto = [5, 5, 5]
+weigth = [10, 20, 30]
+
+
+def dot_product(kanto, weigth):
+    z = 0
+    for x, y in zip(kanto, weigth):
+        z += x*y
+    return z
+
+
+val = dot_product(kanto, weigth)
+print(val)
+
+
+x = np.array([5, 5, 5])
+
+y = np.array([10, 20, 30])
+
+res = np.dot(x, y)
+print(res)
